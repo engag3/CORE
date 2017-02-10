@@ -7,6 +7,8 @@
 * Author:       Ξ Π G A G Ξ _ M Ξ D I A™
 * Author URI:   https://www.engag3.media
 * License: A "Slug" license name e.g. GPL12
+* GitHub Plugin URI: aengag3/CORE
+* GitHub Plugin URI: https://github.com/engag3/CORE
 */
 
 /**
@@ -117,7 +119,7 @@ add_action( 'admin_menu' , 'remove_page_excerpt_field' );
  }
  add_action('do_meta_boxes', 'wpse33063_move_meta_box');
 
- // 
+ //
  // function fb_remove_postbox() {
  //     wp_deregister_script('postbox');
  // }
