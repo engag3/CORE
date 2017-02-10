@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #e1e3e6; }
+
+ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.current:after {
+  border-right-color: #e1e3e6; }
+
+a {
+  transition: all .2s;
+  text-decoration: none; }
+
+* {
+  outline: 0 !important; }
+
+input[type=text]:focus,
+input[type=search]:focus,
+input[type=radio]:focus,
+input[type=tel]:focus,
+input[type=time]:focus,
+input[type=url]:focus,
+input[type=week]:focus,
+input[type=password]:focus,
+input[type=checkbox]:focus,
+input[type=color]:focus,
+input[type=date]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=email]:focus,
+input[type=month]:focus,
+input[type=number]:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 rgba(30, 140, 190, 0);
+  border-color: #dedede;
+  outline: 0 !important; }
+
+input[type=text],
+input[type=search],
+input[type=radio],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week],
+input[type=password],
+input[type=checkbox],
+input[type=color],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=select],
+input[type=month],
+input[type=number],
+select,
+textarea {
+  padding: 0.5em;
+  border: 1px solid #d3dbe2;
+  border-radius: 3px; }
+
+/**
+ * Button
+ */
+.wp-core-ui .button,
+.wp-core-ui .button-primary,
+.wp-core-ui .button-secondary {
+  border-radius: 0; }
+
+#adminmenu,
+#adminmenu .wp-submenu,
+#adminmenuback,
+#adminmenuwrap {
+  width: 210px; }
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+  background-color: #111;
+  border-left: solid 6px #0081bf; }
+
+#wpcontent,
+#wpfooter {
+  margin-left: 210px; }
+
+#adminmenu div.wp-menu-name {
+  padding: 12px 0; }
+
+#adminmenu li {
+  letter-spacing: 1px; }
+  #adminmenu li a {
+    color: #ccc; }
+
+#adminmenu li.wp-menu-separator {
+  background-color: #fff;
+  opacity: .1;
+  height: 1px;
+  margin: 0.5rem 1rem; }
+
+#adminmenu div.wp-menu-image {
+  width: 48px; }
+
+div.wp-menu-image:before {
+  padding: 11px 3px; }
+
+#adminmenu .wp-submenu {
+  left: 210px; }
+
+#adminmenu .wp-has-current-submenu .wp-submenu {
+  background-color: #191919 !important; }
+
+#adminmenu .wp-has-current-submenu ul > li > a {
+  padding: 8px 20px; }
+  #adminmenu .wp-has-current-submenu ul > li > a::before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    width: .7rem;
+    height: 0.7rem;
+    margin-right: .75rem;
+    top: -.25rem;
+    border-left: dashed 1px #666;
+    border-bottom: dashed 1px #666; }
+
+/**
+ * Page
+ */
+body:not(.index-php):not(.themes-php):not(.upload-php) #wpbody-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: block;
+  float: none; }
+  body:not(.index-php):not(.themes-php):not(.upload-php) #wpbody-content .wrap {
+    margin-top: 0; }
+
+.wrap > h1 {
+  font-weight: 300;
+  font-size: 2.2em;
+  opacity: .75; }
+
+/**
+ * Remove "PressThis"
+ */
+.card.pressthis {
+  display: none !important; }
+
+/**
+ * Style Metaboxes
+ */
+.postbox {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+  .postbox h2.hndle {
+    padding: 12px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    border-bottom: 0; }
+  .postbox .handlediv {
+    display: none !important;
+    height: 40px; }
+
+/**
+ * Post Lists
+ */
+.wp-list-table .title strong a:not(:hover) {
+  color: inherit; }
+
+/**
+  * Single
+  */
+#poststuff {
+  padding: 0; }
+
+#titlediv #title {
+  height: auto; }
+
+#titlewrap {
+  position: relative; }
+
+#titlediv #title-prompt-text {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+#titlediv #title-prompt-text,
+#titlediv #title {
+  height: auto;
+  padding: 1.2rem 1rem;
+  font-size: 2rem;
+  font-weight: 300; }
+
+#postimagediv .hide-if-no-js {
+  text-align: center;
+  text-transform: uppercase; }
+
+#set-post-thumbnail {
+  width: 100%;
+  max-width: 400px; }
+  #set-post-thumbnail img {
+    border: solid 1px #cccccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 100% !important; }
+  #set-post-thumbnail .featured-image-placeholder {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    background: center no-repeat url("../images/images.png");
+    background-size: contain; }
+  #set-post-thumbnail img + .featured-image-placeholder {
+    display: none !important; }
+
+#poststuff #postbox-container-1 .postbox {
+  background-color: #f9f9f9; }
+
+#wp-content-editor-tools {
+  background-color: transparent; }
+
+#wp-content-editor-tools {
+  padding-top: 0; }
+
+.plugin-update {
+  display: none !important; }
